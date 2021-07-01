@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="icon" href="img/Riaz.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>My portfolio wbsite</title>
+    
+</head>
+<body class="bg">
+    <!--Heading-->
+    <h2 class="display-5 text-center text-light d-none d-md-block">I AM BAPPY <p class="intro-subtitle"><span class="text-slider-items d-none">Web Developer,Web Designer,Frontend Developer,WP Developer,PowerPoint Expert</span><strong class="text-slider"></strong></p>
+    </h2>
+
+       <!--Navigation-->
+    <div class="navbar sticky-top navbar-dark navbar-expand-md py-lg-3" id="mainNav">
+        <div class="container">
+            <div><a href="index.html">
+                <img src="img/Riaz.png" style="width:50px; height:50px;"alt="nav-logo" class="logo"/>
+               </a>
+            </div>
+    <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navItem" aria-controls="navbarResponsive" aria-expanded="false" 
+    aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navItem">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item px-lg-4"><a class="nav-link  text-uppercase active" href="index.html">Home</a></li>
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="about.html">About me</a></li>
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="work.html">my work</a></li>
+                    <li class="nav-item dropdown px-lg-4"><a class="nav-link text-uppercase droodown-toggle" data-toggle="dropdown" >contact me &raquo;</a>
+                      <div class="dropdown-menu" id="dropdown">
+                          <a href="send_email.html" class="dropdown-item text-decoration-none">Email Us</a>
+                          <a href="login.html" class="dropdown-item text-decoration-none">Login</a>
+                            <a href="signup.html" class="dropdown-item text-decoration-none">Sign Up</a>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!--Bg-bubble-section-->
+<div >
+    <div class="side-bar d-none d-sm-block">
+     <div class="social-links">
+     <img src="img/bubble/fb.png" alt="" />
+     <img src="img/bubble/ig.png" alt="" />
+     <img src="img/bubble/tw.png" alt="" />
+     </div>
+     <div class="useful-links">
+     <img src="img/bubble/share.png" alt="" />
+     <img src="img/bubble/info.png" alt="" />
+     </div>
+    </div>
+    <div class="bubbles">
+    <img src="img/bubble/bubble.png" alt="" />
+    <img src="img/bubble/bubble.png" alt="" />
+    <img src="img/bubble/bubble.png" alt="" />
+    <img src="img/bubble/bubble.png" alt="" />
+    <img src="img/bubble/bubble.png" alt="" />
+    <img src="img/bubble/bubble.png" alt="" />
+    <img src="img/bubble/bubble.png" alt="" />
+    <img src="img/bubble/bubble.png" alt="" />
+    <img src="img/bubble/bubble.png" alt="" />
+    </div>
+</div>
+<section id="home-card" class="mt-5 mb-5">
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-lg-6">
+            <div class="text bg-light text-dark rounded">
+                <h2 class="text-center p-0 pt-3 ">Last project</h2>
+                <p class="lead text-center px-4 pb-4">As a web designer i am practicing different kinds of web user interface design and full website design.Some time i design only a single page as part of my practice session.This is how i am getting experiance day by day.I believe Such kind of learning will help me out off situation of professional life.</p>       
+            </div>
+            <div class="text-center" id="home_btn">
+                <a href="#"  class="btn btn-info py-2 px-5">Visit Here</a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+</section>
+
+        <script src="js/jquery-3.5.1.slim.min.js" type="text/javascript"></script>
+        <script src="js/popper.min.js" type="text/javascript"></script>
+         <script src="js/bootstrap.min.js" type="text/javascript"></script>
+         <script src="js/typed.min.js" type="text/javascript"></script>
+         <script>
+             if ($('.text-slider').length == 1) {
+    var typed_strings = $('.text-slider-items').text();
+		var typed = new Typed('.text-slider', {
+			strings: typed_strings.split(','),
+			typeSpeed: 80,
+			loop: true,
+			backDelay: 1100,
+			backSpeed: 30
+		});
+	}
+         </script>
+</body>
+</html>

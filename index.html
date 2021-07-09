@@ -10,7 +10,7 @@
     <title>My portfolio wbsite</title>
     
 </head>
-<body class="bg">
+<body class="bg" id="bd">
     <!--Heading-->
     <h2 class="display-5 text-center text-light d-none d-md-block">I AM BAPPY <p class="intro-subtitle"><span class="text-slider-items d-none">Web Developer,Web Designer,Frontend Developer,WP Developer,PowerPoint Expert</span><strong class="text-slider"></strong></p>
     </h2>
@@ -114,8 +114,8 @@
                   document.getElementById("lastJob").style.display="block";
                   document.getElementById("mainNav").style.marginTop="-50px";
              })
-		document.querySelector("body").addEvenetListener("click",function(){
-		    document.getElementById("home-card").style.display="none";
+		document.getElementById("bd").addEvenetListener("click",function(){
+		    document.getElementById("lastJob").style.display="none";
 		})
          </script>
 </body>

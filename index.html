@@ -107,13 +107,14 @@
 	}
          </script>
 	<script>
+		
              document.getElementById("visitButton").addEventListener("click",function(){
-                  let home=document.getElementById("home-card")
+		  let home=document.getElementById("home-card")
                   home.style.display="none";
                   document.getElementById("lastJob").style.display="block";
                   document.getElementById("mainNav").style.marginTop="-50px";
              })
-		document.querySelector(".bg").addEvenetListener("click",function(){
+		document.querySelector("body").addEvenetListener("click",function(){
 		    document.getElementById("home-card").style.display="none";
 		})
          </script>

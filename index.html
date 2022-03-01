@@ -84,6 +84,7 @@
 </section>
 <section id="lastJob">
     <div class="container mt-2">
+    <button class="close text-danger fw-bold" id="close">&times;</button>
         <div class="row justify-content-center">
             <img src="img/work/wp/ecomm/multple_menu.png" class="img-fluid" style="height:500px; width:1050px;" alt="last project"> 
         </div>
@@ -106,17 +107,20 @@
 		});
 	}
          </script>
-	<script>
-		document.getElementById("lastJob").style.display="none";
-		
-             document.getElementById("visitButton").addEventListener("click",function(){
-		  let homeCard=document.getElementById("home-card")
-		  
-                  homecard.style.display="none";
-		  
+	 <script>
+             let lastJob=document.getElementById("lastJob")
+             lastJob.style.display="none";
+             let homeCard=document.getElementById("home-card")
+             document.getElementById("visitButton").addEventListener("click",function(){   
+                  homeCard.style.display="none"; 
                   document.getElementById("lastJob").style.display="block";
                   document.getElementById("mainNav").style.marginTop="-50px";
              })
+             document.getElementById("close").addEventListener("click",function (){
+                    document.getElementById("lastJob").style.display="none";
+                    document.getElementById("mainNav").style.marginTop="0px";
+                    homeCard.style.display="block";
+                  })
          </script>
 </body>
 </html>
